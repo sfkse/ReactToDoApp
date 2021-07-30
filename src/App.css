@@ -1,38 +1,83 @@
 .App {
+  width: 40%;
+  padding: 1rem;
+  margin: 3rem auto;
+  border-radius: 5px;
+  background-image: linear-gradient(to bottom right, #cc1479, #e7bdd5);
+}
+.header {
   text-align: center;
+  padding-top: 1rem;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.add-button {
+  border: none;
+  padding: 0.5rem;
+  color: #fff;
+  border-radius: 3px;
+  cursor: pointer;
+  letter-spacing: 1px;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.task-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 60%;
+  margin: auto;
+  background-color: #f4f4f4;
+  padding: 0 1rem;
+  margin-top: 2rem;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.task-desc {
+  text-align: left;
+}
+.close {
+  cursor: pointer;
+  color: red;
+  font-weight: bold;
+}
+.task-input-wrapper {
+  width: 60%;
+  margin: auto;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: flex-start;
+  justify-content: space-between;
+  text-align: left;
 }
-
-.App-link {
-  color: #61dafb;
+input,
+.task-name,
+.task-time,
+.save-button {
+  width: 100%;
+  margin-bottom: 0.5rem;
+  letter-spacing: 1px;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.save-button {
+  border: none;
+  background-color: #6d0e8a;
+  color: #fff;
+  padding: 0.5rem;
+  cursor: pointer;
+  margin-top: 1rem;
+}
+input {
+  border: none;
+  padding: 0.5rem 0.3rem;
+  margin-top: 0.3rem;
+}
+input:focus {
+  outline: none;
+}
+input::placeholder {
+  color: rgb(175, 175, 175);
+}
+label {
+  color: rgb(236, 236, 236);
+}
+.done {
+  border-left: 5px solid #6d0e8a;
+}
+.no-task {
+  text-align: center;
+  color: brown;
 }
