@@ -20,7 +20,7 @@ function App() {
       "isDone": false
     },
     {
-      "text": "wash car",
+      "text": "Wash car",
       "day": "Feb 10th at 3:00pm",
       "isDone": false,
       "id": 3
