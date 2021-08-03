@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "/sfkse/ReactToDoApp.git/static/css/main.967bc3f7.chunk.css",
-    "main.js": "/sfkse/ReactToDoApp.git/static/js/main.d4694c0b.chunk.js",
-    "main.js.map": "/sfkse/ReactToDoApp.git/static/js/main.d4694c0b.chunk.js.map",
-    "runtime-main.js": "/sfkse/ReactToDoApp.git/static/js/runtime-main.db31f5c7.js",
-    "runtime-main.js.map": "/sfkse/ReactToDoApp.git/static/js/runtime-main.db31f5c7.js.map",
-    "static/js/2.86a45256.chunk.js": "/sfkse/ReactToDoApp.git/static/js/2.86a45256.chunk.js",
-    "static/js/2.86a45256.chunk.js.map": "/sfkse/ReactToDoApp.git/static/js/2.86a45256.chunk.js.map",
-    "index.html": "/sfkse/ReactToDoApp.git/index.html",
-    "static/css/main.967bc3f7.chunk.css.map": "/sfkse/ReactToDoApp.git/static/css/main.967bc3f7.chunk.css.map",
-    "static/js/2.86a45256.chunk.js.LICENSE.txt": "/sfkse/ReactToDoApp.git/static/js/2.86a45256.chunk.js.LICENSE.txt"
+    "main.css": "/sfkse/ReactToDoApp/static/css/main.967bc3f7.chunk.css",
+    "main.js": "/sfkse/ReactToDoApp/static/js/main.d4694c0b.chunk.js",
+    "main.js.map": "/sfkse/ReactToDoApp/static/js/main.d4694c0b.chunk.js.map",
+    "runtime-main.js": "/sfkse/ReactToDoApp/static/js/runtime-main.105851f3.js",
+    "runtime-main.js.map": "/sfkse/ReactToDoApp/static/js/runtime-main.105851f3.js.map",
+    "static/js/2.86a45256.chunk.js": "/sfkse/ReactToDoApp/static/js/2.86a45256.chunk.js",
+    "static/js/2.86a45256.chunk.js.map": "/sfkse/ReactToDoApp/static/js/2.86a45256.chunk.js.map",
+    "index.html": "/sfkse/ReactToDoApp/index.html",
+    "static/css/main.967bc3f7.chunk.css.map": "/sfkse/ReactToDoApp/static/css/main.967bc3f7.chunk.css.map",
+    "static/js/2.86a45256.chunk.js.LICENSE.txt": "/sfkse/ReactToDoApp/static/js/2.86a45256.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.db31f5c7.js",
+    "static/js/runtime-main.105851f3.js",
     "static/js/2.86a45256.chunk.js",
     "static/css/main.967bc3f7.chunk.css",
     "static/js/main.d4694c0b.chunk.js"
