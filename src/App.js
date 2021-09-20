@@ -10,10 +10,13 @@ function App() {
   // console.log(tasks)
   const baseUrl = " http://localhost:3001/tasks";
 
-  useEffect(() => {
+  const fetchTasks = () => {
     fetch(baseUrl)
       .then(response => response.json())
       .then(data => setTask(data))
+  }
+  useEffect(() => {
+    fetchTasks()
   }, [])
 
   const handleVisible = () => {
@@ -28,11 +31,17 @@ function App() {
   }
 
   //Add Task
-  const addTask = (task) => {
-    const newTaskID = Math.floor(Math.random() * 100);
-    const newTask = { ...task, "id": newTaskID };
-    setTask([...tasks, newTask])
+  const addTask = async (task) => {
 
+    const res = await fetch(baseUrl, {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json'
+      },
+      body: JSON.stringify(task)
+    });
+    const data = await res.json();
+    fetchTasks()
   }
 
   //Toggle task
