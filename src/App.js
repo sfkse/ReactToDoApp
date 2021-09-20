@@ -44,18 +44,32 @@ function App() {
       },
       body: JSON.stringify(task)
     });
-    const data = await res.json();
+    await res.json();
     fetchTasks()
   }
 
   //Toggle task
-  const handleToggle = (taskID) => {
+  const handleToggle = async (toggleDoneID) => {
+    const res = await fetch(`${baseUrl}/${toggleDoneID}`);
+    const data = await res.json();
+    const updatedTask = { ...data, isDone: !data.isDone };
 
-    setTask(
-      tasks?.map(task => task.id === taskID ? { ...task, "isDone": !task.isDone } : task)
-    )
-
+    await fetch(`${baseUrl}/${toggleDoneID}`, {
+      method: 'PUT',
+      headers: {
+        "Content-Type": "application/json"
+      },
+      body: JSON.stringify(updatedTask)
+    });
+    fetchTasks()
   }
+  // const handleToggle = (taskID) => {
+
+  //   setTask(
+  //     tasks?.map(task => task.id === taskID ? { ...task, "isDone": !task.isDone } : task)
+  //   )
+
+  // }
   return (
     <div className="App">
       <Header title="Task Tracker" visible={visible} handleVisible={handleVisible} />

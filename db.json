@@ -5,6 +5,18 @@
       "text": "Feed the Dog",
       "day": "Feb 6th at 1:30pm",
       "isDone": true
+    },
+    {
+      "text": "Feed the Cat",
+      "day": "13:00 am",
+      "isDone": false,
+      "id": 3
+    },
+    {
+      "text": "Wash the Car",
+      "day": "12:00 am",
+      "isDone": false,
+      "id": 4
     }
   ]
 }
